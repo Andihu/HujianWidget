@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <Button
+        android:text="打开左菜单"
+        android:id="@+id/open_left"
+        android:onClick="todo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="打开you菜单"
+        android:id="@+id/open_right"
+        android:onClick="todo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="关闭菜单"
+        android:onClick="todo"
+        android:id="@+id/close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <com.hujian.widget.swipelayout.SwipeListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.hujian.widget.swipelayout.SwipeListView>
+</LinearLayout>
